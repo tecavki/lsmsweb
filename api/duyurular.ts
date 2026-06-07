@@ -1,7 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { getDb } from './lib/mongodb'
-import { istekKullanicisi } from './lib/auth'
-import { govdeOku, hata, mapId, tekParam, toObjectId } from './lib/util'
+import { getDb, istekKullanicisi, govdeOku, hata, mapId, tekParam, toObjectId } from './shared'
 
 const simdi = () => new Date().toISOString()
 

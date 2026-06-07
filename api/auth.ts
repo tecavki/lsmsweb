@@ -1,19 +1,18 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { getDb } from './lib/mongodb'
-import { ensureSeed } from './lib/seed'
 import {
+  getDb,
   istekSahibi,
   sifreDogrula,
   sifreHashle,
   tokenUret,
-} from './lib/auth'
-import {
   govdeOku,
   hata,
   personelDisa,
   tekParam,
   vatandasDisa,
-} from './lib/util'
+  ensureSeed,
+  toObjectId,
+} from './shared'
 
 function regexEscape(s: string): string {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
