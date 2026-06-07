@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { getDb } from './_lib/mongodb'
-import { istekSahibi } from './_lib/auth'
-import { govdeOku, hata, mapId, tekParam, toObjectId } from './_lib/util'
+import { getDb } from './lib/mongodb'
+import { istekSahibi } from './lib/auth'
+import { govdeOku, hata, mapId, tekParam, toObjectId } from './lib/util'
 
 const GECERLI_DURUM = ['beklemede', 'onaylandi', 'reddedildi', 'tamamlandi', 'iptal']
 

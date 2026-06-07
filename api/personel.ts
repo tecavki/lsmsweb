@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { getDb } from './_lib/mongodb'
-import { istekKullanicisi, sifreHashle } from './_lib/auth'
-import { govdeOku, hata, personelDisa, tekParam, toObjectId } from './_lib/util'
+import { getDb } from './lib/mongodb'
+import { istekKullanicisi, sifreHashle } from './lib/auth'
+import { govdeOku, hata, personelDisa, tekParam, toObjectId } from './lib/util'
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   try {

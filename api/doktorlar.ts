@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { getDb } from './_lib/mongodb'
-import { istekSahibi } from './_lib/auth'
-import { hata } from './_lib/util'
+import { getDb } from './lib/mongodb'
+import { istekSahibi } from './lib/auth'
+import { hata } from './lib/util'
 
 // Randevu alinabilecek aktif personel/doktor listesi (yalniz guvenli alanlar).
 // Kimligi dogrulanmis her kullanici (personel veya vatandas) erisebilir.
